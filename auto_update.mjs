@@ -98,7 +98,7 @@ for (let index = 0; index < reposList.length; index++) {
   const {tag_name, assets} = mostRecentRelease;
   
   let matches = tag_name.match(semverFinder);
-  const releaseSemver = matches[1];
+  var releaseSemver = matches[1];
   releaseSemver = semverFix(releaseSemver);
 
   // might need to search for the right zip here if there's more than one

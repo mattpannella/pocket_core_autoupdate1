@@ -25,5 +25,26 @@
       },
     "name": "Mazamars312.NeoGeo",
     "allowPrerelease": true
+  },
+  {
+    "repo": {
+      "user": "spiritualized1997",
+      "project": "openFPGA-SG1000"
+      },
+      "name": "Spiritualized.SG-1000"
+  },
+  {
+    "repo": {
+      "user": "spiritualized1997",
+      "project": "openFPGA-SMS"
+      },
+      "name": "Spiritualized.SMS"
+  },
+  {
+    "repo": {
+      "user": "spiritualized1997",
+      "project": "openFPGA-GG"
+      },
+      "name": "Spiritualized.GG"
   }
 ]

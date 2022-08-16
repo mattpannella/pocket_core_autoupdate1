@@ -46,7 +46,7 @@ const isActuallySemver = (potentiallySemver) => semverRegex.test(potentiallySemv
 
 const apiUrl = "https://api.github.com/repos/%s/%s/releases";
 
-const ZIP_TYPE = "application/x-zip-compressed";
+const ZIP_TYPES = ["application/x-zip-compressed", "application/zip"];
 
 //even though its technically not a valid semver, allow use of 2 part versions, and just add a .0 to complete the 3rd part
 const semverFix = (version) => {
@@ -108,7 +108,7 @@ for (let index = 0; index < reposList.length; index++) {
   // might need to search for the right zip here if there's more than one
   //iterate through assets to find the zip release
   for(let i = 0; i < assets.length; i++) {
-    if(assets[i].content_type == ZIP_TYPE) {
+    if(ZIP_TYPES.includes(assets[i].content_type)) {
       coreAsset = assets[i];
       break;
     }

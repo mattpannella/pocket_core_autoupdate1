@@ -1,3 +1,6 @@
+THIS SCRIPT HAS BEEN REPLACED BY https://github.com/mattpannella/pocket_core_autoupdate_net. 
+
+
 You need to install `zx` to run this script (https://github.com/google/zx)
 
 If you have npm installed, just run `npm i -g zx`
